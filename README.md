@@ -15,21 +15,21 @@ dtparam=i2c_arm=on\
 dtparam=i2s=on\
 dtparam=spi=on\
 dtparam=i2c_baudrate=10000\
-dtparam=i2c_vc=on\
+dtparam=i2c_vc=on
 
-camera_auto_detect=0\
+camera_auto_detect=0
 
 dtoverlay=vc4-kms-v3d,cma-512\
-max_framebuffers=2\
+max_framebuffers=2
 
 [all]\
 dtoverlay=tc358743,4lane=1\
-dtoverlay=tc358743-audio\
+dtoverlay=tc358743-audio
 
 ### 3- Copy the hdmi2csi2card with all files to you RPi5
 
 ### 4- Run the enablehdmi.sh script with bash
-bash enablehdmi.sh\
+bash enablehdmi.sh
 
 **The script is fully customizable. You can play with the variable and change the detection resolution.**
 
