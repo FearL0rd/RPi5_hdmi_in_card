@@ -29,7 +29,8 @@ dtoverlay=tc358743-audio_
 ### 3- Copy the hdmi2csi2card with all files to you RPi5
 
 ### 4- Run the enablehdmi.sh script with bash
-    **Make sure the device ios connected to the HDMI IN**\
+Make sure the device ios connected to the HDMI IN
+    
 _bash enablehdmi.sh_
 
 **The script is fully customizable. You can play with the variable and change the detection resolution.**
