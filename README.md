@@ -1,14 +1,15 @@
 # RPi5_hdmi_in_card
 Raspberry Pi5 HDMI to CSI-2 input card based on TC358743
 
-I created this tutorial to help the community enable cheap HDMI to CSI-2 cards like Geekworm C790 based on TC358743
-The intent of the script is automatically detect the media device that keeps changing every boot
+__ __I created this tutorial to help the community enable cheap HDMI to CSI-2 cards like Geekworm C790 based on TC358743
+__ __The intent of the script is automatically detect the media device that keeps changing every boot
 
-STEPS
+## STEPS
 
-1- Modify the config file 
+###1- Modify the config file 
 sudo nano /boot/firmware/config.txt
-2- Add/Modify the entries below
+
+###2- Add/Modify the entries below
 
 dtparam=i2c_arm=on
 dtparam=i2s=on
@@ -25,9 +26,10 @@ max_framebuffers=2
 dtoverlay=tc358743,4lane=1
 dtoverlay=tc358743-audio
 
-3- Copy the hdmi2csi2card with all files to you RPi5
-4- Run the enablehdmi.sh script with bash
+###3- Copy the hdmi2csi2card with all files to you RPi5
+
+###4- Run the enablehdmi.sh script with bash
 bash enablehdmi.sh
 
-The script is fully customizable. You can play with the variable and change the detection resolution
+__ __The script is fully customizable. You can play with the variable and change the detection resolution
 
