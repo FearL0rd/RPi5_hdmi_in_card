@@ -7,23 +7,23 @@
 ## STEPS
 
 ### 1- Modify the config file 
-        sudo nano /boot/firmware/config.txt\
+        sudo nano /boot/firmware/config.txt
 
 ### 2- Add/Modify the entries below
 
-        dtparam=i2c_arm=on\
-        dtparam=i2s=on\
-        dtparam=spi=on\
-        dtparam=i2c_baudrate=10000\
+        dtparam=i2c_arm=on
+        dtparam=i2s=on
+        dtparam=spi=on
+        dtparam=i2c_baudrate=10000
         dtparam=i2c_vc=on
         
         camera_auto_detect=0
         
-        dtoverlay=vc4-kms-v3d,cma-512\
+        dtoverlay=vc4-kms-v3d,cma-512
         max_framebuffers=2
 
-        [all]\
-        dtoverlay=tc358743,4lane=1\
+        [all]
+        dtoverlay=tc358743,4lane=1
         dtoverlay=tc358743-audio
 
 ### 3- Copy the hdmi2csi2card with all files to you RPi5
