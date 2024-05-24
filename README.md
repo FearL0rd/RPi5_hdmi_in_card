@@ -29,7 +29,7 @@
 ### 3- Copy the hdmi2csi2card with all files to you RPi5
 
 ### 4- Run the enablehdmi.sh script with bash
-Make sure the device ios connected to the HDMI IN
+Make sure the device is connected to the HDMI IN
     
         bash enablehdmi.sh
 
