@@ -7,11 +7,11 @@
 ## STEPS
 
 ### 1- Modify the config file 
-        _sudo nano /boot/firmware/config.txt\_
+        sudo nano /boot/firmware/config.txt\
 
 ### 2- Add/Modify the entries below
 
-        _dtparam=i2c_arm=on\
+        dtparam=i2c_arm=on\
         dtparam=i2s=on\
         dtparam=spi=on\
         dtparam=i2c_baudrate=10000\
@@ -24,14 +24,14 @@
 
         [all]\
         dtoverlay=tc358743,4lane=1\
-        dtoverlay=tc358743-audio_
+        dtoverlay=tc358743-audio
 
 ### 3- Copy the hdmi2csi2card with all files to you RPi5
 
 ### 4- Run the enablehdmi.sh script with bash
 Make sure the device ios connected to the HDMI IN
     
-        _bash enablehdmi.sh_
+        bash enablehdmi.sh
 
 **The script is fully customizable. You can play with the variable and change the detection resolution.**
 
